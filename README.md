@@ -15,7 +15,9 @@ Home page layout: https://www.w3schools.com/html/html_layout.asp
 
 Checkbox filtering: https://codepen.io/Mudriy_K/pen/JRwyyY
 
+Image Zoom: https://github.com/malaman/js-image-zoom
 
+Horizontal list: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_horizontal
 
 Debugging helpful links: 
 

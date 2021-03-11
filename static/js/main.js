@@ -52,4 +52,3 @@ var filtering = function () {
 
   $filterCheckboxes.change(filterFunc());
 }
-
