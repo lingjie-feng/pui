@@ -6,34 +6,59 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="static/css/style.css">
-    
     <!-- JS -->
     <script src="static/js/main.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <nav>
-      <div class="logo-contrainer">
+    <header>
+      <div class="nav-item logo-container">
         <a id="logo"><img src="static/images/paws.png"></a>
-        <h2 id="name"> Muddy Paws Adventure Gear </h2>
+        <div id=name>
+          <img src="static/images/website-title.png">
+        </div>
       </div>
     
-      <ul class="nav-links">
-        <li id="home"><a href="index.html"> Home </a></li>
-        <li id="about"><a href="back-to-home.html"> About </a></li>
-        <li id="shop-cat"><a href="product-catalog.html"> Shop Cat </a></li>
-        <li id="shop-dog"><a href="product-catalog.html"> Shop Dog </a></li>
-        <li id="contact"><a href="back-to-home.html"> Contact </a></li>
-      </ul>
-    </nav>
+      <div class="nav-item">
+        <ul class="nav-links body-text">
+          <li class="home"><a href="index.html"> Home </a></li>
+          <li class="shop-cat"><a href="product-catalog.html"> Shop Cats </a></li>
+          <li class="shop-dog"><a href="product-catalog.html"> Shop Dogs </a></li>
+          <li class="contact"><a href="test.html"> Contact </a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item login">
+        <div class="signin center text-color"> sign in </div>
+        <div id="search"><img src="static/images/search.png"></div>
+        <div id="cart"><img src="static/images/cart.png"> </div>
+      </div>
+    </header>
     
 
     <div class="body-content">
-      <div class="bg-image-container">
-        <a class="bg-img" href="#"><img src="static/images/hiking_dogs.jpg"></a>
+      <div class="banner">
+        <img class="banner-img fade" src="static/images/hiking_dogs.jpg">
+        <img class="banner-img fade" src="static/images/banner-3.jpg">
+        <img class="banner-img fade" src="static/images/banner-2.jpg">
+        <img class="banner-img fade" src="static/images/banner-4.jpg">
+        <button onclick="location.href='product-catalog.html';"> Shop Now </button>
       </div>
-      <button class="home-button", onclick="location.href='product-catalog.html';"> SHOP NOW </button>
-    
+        <br>
+        
+      <div class="center">
+        <span class="dot active" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+
       <div class="four-div">
         <div id="each-div"> 
           <a id="new-in", href="product-catalog.html"><img src="static/images/cat_harness2.jpg"></a>
@@ -65,7 +90,6 @@
         </div>
       </div>
     </footer>
-    
     </body>
 
 </html>

@@ -19,6 +19,10 @@ Image Zoom: https://github.com/malaman/js-image-zoom
 
 Horizontal list: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_horizontal
 
+Add button to image: https://www.w3schools.com/howto/howto_css_button_on_image.asp
+
+Slide show of banner images: https://www.w3schools.com/howto/howto_js_slideshow.asp
+
 Debugging helpful links: 
 
 On change: https://stackoverflow.com/questions/35562250/onchange-function-not-working
