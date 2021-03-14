@@ -22,28 +22,28 @@
 
   <body>
     <header>
-        <div class="nav-item logo-container">
-          <a id="logo"><img src="static/images/paws.png"></a>
-          <div id=name>
-            <img src="static/images/website-title.png">
-          </div>
+      <div class="nav-item logo-container">
+        <a id="logo"><img src="static/images/paws.png"></a>
+        <div id=name>
+          <img src="static/images/website-title.png">
         </div>
-      
-        <div class="nav-item">
-          <ul class="nav-links body-text">
-            <li class="home"><a href="home.html"> Home </a></li>
-            <li class="shop-cat"><a href="product-catalog.html"> Shop Cats </a></li>
-            <li class="shop-dog"><a href="product-catalog.html"> Shop Dogs </a></li>
-            <li class="contact"><a href="test.html"> Contact </a></li>
-          </ul>
-        </div>
-  
-        <div class="nav-item login">
-          <div class="signin center text-color body-text"> sign in </div>
-          <div id="search"><img src="static/images/search.png"></div>
-          <div id="cart"><img src="static/images/cart.png"> </div>
-        </div>
-      </header>
+      </div>
+    
+      <div class="nav-item">
+        <ul class="nav-links body-text">
+          <li class="home"><a href="home.html"> Home </a></li>
+          <li class="shop-cat"><a href="product-catalog.html"> Shop Cats </a></li>
+          <li class="shop-dog"><a href="product-catalog.html"> Shop Dogs </a></li>
+          <li class="contact"><a href="test.html"> Contact </a></li>
+        </ul>
+      </div>
+
+      <div class="nav-item login">
+        <div class="signin center text-color body-text"> sign in </div>
+        <div id="search"><img src="static/images/search.png"></div>
+        <div id="cart"><img src="static/images/cart.png"> </div>
+      </div>
+    </header>
 
     <div class="product-info">
         <div class="item-image-parent">
@@ -157,6 +157,15 @@
         </div>
     </div>
 
+    <footer>
+      <div id="subscript">
+        <div class="subscription">
+          <input id="input-box" type="email" name="emailaddress", value="email address" onclick="hidevalue()">
+          <button class="submit-button body-text" id="subcribe-btn" type="submit" onclick="display_sub()"> subscribe </button>
+        </div>
+        <p class="sub center body-text"> Subscribe with your email to get latest information on Muddy Paws products. </p>
+      </div>
+    </footer>
   </body>
 
 </html>
