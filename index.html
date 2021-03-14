@@ -53,29 +53,29 @@
         <br>
         
       <div class="center">
-        <span class="dot active" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
         <span class="dot" onclick="currentSlide(4)"></span> 
       </div>
 
       <div class="four-div">
-        <div id="each-div"> 
+        <div class="each-div" id="new-in"> 
           <a id="new-in", href="product-catalog.html"><img src="static/images/cat_harness2.jpg"></a>
           <br><h1> NEW IN </h1>
         </div>
         
-        <div id="each-div"> 
-          <a id="best-seller", href="product-catalog.html"><img src="static/images/dog_gps.jpg"></a>
+        <div class="each-div" id="best-seller"> 
+          <a href="product-catalog.html"><img src="static/images/dog_gps.jpg"></a>
           <br><h1> BEST SELLER </h1>
         </div>
         
-        <div id="each-div"> 
+        <div class="each-div" id="cat-fav"> 
           <a id="cat-fav", href="product-catalog.html"><img src="static/images/cat_harness.jpg"></a>
           <br><h1> CAT FAVORITE </h1>
         </div>
 
-        <div id="each-div"> 
+        <div class="each-div" id="dog-fav"> 
           <a id="dog-fav", href="product-catalog.html"><img src="static/images/dog_harness.jpg"></a>
           <br><h1> DOG FAVORITE </h1>
         </div>
@@ -83,13 +83,16 @@
     
     
     <footer>
-      <div class="subscription">
-        <div id="email-input">
-          <input class="input-box" type="email" name="emailaddress", value="email address">
-          <button class="submit-button" type="submit" onclick=""> submit </button>
+      <div id="subscript">
+        <div class="subscription">
+          <input id="input-box" type="email" name="emailaddress", value="email address" onclick="hidevalue()">
+          <button class="submit-button body-text" id="subcribe-btn" type="submit" onclick="display_sub()"> subscribe </button>
         </div>
+        <p class="sub center body-text"> Subscribe with your email to get latest information on Muddy Paws products. </p>
       </div>
     </footer>
+
+    <script> showSlides(1);</script>
     </body>
 
 </html>

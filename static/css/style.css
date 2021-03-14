@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(209, 224, 204);
+  background-color: #F7FAF5;
 }
 
 .body-text {
@@ -137,21 +137,28 @@ header a:hover {
   grid-template-rows: 1fr 1fr;
 }
 
-#each-div {
+.each-div {
   display: grid;
   grid-template-rows: 4fr 1fr;
-  justify-items: center;
+  width: 350px;
+  height: 350px;
+  margin-top: 10%;
+  margin-left: 30%;
 }
 
-#new-in,
-#best-seller,
-#cat-fav,
-#dog-fav { 
-  top: 20%;
-  display: block;
-  width: 50%;
-  height: 50%;
-  position: relative;
+.each-div img{
+  float: left;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+#new-in h1,
+#cat-fav h1,
+#best-seller h1,
+#dog-fav h1
+{
+  text-align: center;
 }
 
 img {
@@ -168,40 +175,45 @@ img:hover {
 
 /* FOOTER */
 footer {
-  background-color: #ffffff;
-  margin-top: 50px;
-  padding: 20px;
+  background-color: #91B6A2;
+  margin-top: 5%;
 }
+
+#subscript p,
+footer p{
+  color: #193b19;
+  margin-top: -1.5%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
 
 .subscription {
-  width: 70%;
-  margin:auto;
-}
-
-#email-input {
-  padding-top: 8px;
-}
-
-#email-input p {
-  padding-bottom: 4px;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  width: 15%;
+  margin: auto;
 }
 
 .submit-button {
-  background-color: #000;
+  background-color: #2E5C2D;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1% 5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
+  border-radius: 10px;
 }
 
-.input-box {
-  padding: 16px;
-  border: 0.3px solid black;
+
+#input-box {
+  padding: 1%;
   margin-right: 15px;
-  color:rgb(167, 167, 167)
+  color:rgb(167, 167, 167);
+  border: none;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -253,7 +265,7 @@ footer {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #E9FFEB;
+  background-color: #bbbbbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -286,3 +298,7 @@ footer {
   .body-text {font-size: 11px}
 }
 
+
+.border {
+  border: 0.2em solid black;
+}

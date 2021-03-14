@@ -1,3 +1,6 @@
+var slideIndex = 1;
+showSlides(slideIndex);
+
 var filtering = function () {
   var $filterCheckboxes = $('input[type="checkbox"]');
 
@@ -54,10 +57,7 @@ var filtering = function () {
 }
 
 
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
+// Banner images slide show
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -80,4 +80,24 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+
+function display_sub() {
+  const newp = document.createElement("p");
+  newp.style.color = "#193b19";
+  newp.style.fontFamily = 'Raleway';
+  const success = document.createTextNode("You have successfully subscribed.");
+  newp.appendChild(success);
+
+  var subscript = document.getElementById("subscript");
+  subscript.appendChild(newp);
+}
+
+
+function hidevalue() {
+  var input = document.getElementById("input-box");
+  if (input.value == 'email address') {
+    input.value='';
+  }
 }
