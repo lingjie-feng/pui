@@ -37,7 +37,7 @@ header {
 .signin {
   margin-top: 4%;
   margin-left: 23%;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .text-color {
@@ -150,6 +150,7 @@ header a:hover {
   width: 350px;
   height: 350px;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 #new-in h1,
@@ -158,6 +159,7 @@ header a:hover {
 #dog-fav h1
 {
   text-align: center;
+  margin-top: -1%;
 }
 
 img {

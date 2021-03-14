@@ -140,10 +140,10 @@
     
     #img-zoom-container {
         order: 2;
-        width: 90%;
+        width: 80%;
         height: 100%;
     }
-    
+
     /* sectioning completed */
     
     
@@ -192,12 +192,12 @@
     
     .star-rating {
         width: 50%;
-        color: gray;
+        color: rgb(173, 171, 171);
         font-size: 24px;
     }
     
     .star-rating span {
-        color: darkgreen;
+        color: gold;
     }
     
     .main-info p {
@@ -207,53 +207,75 @@
     }
     
     #price {
-        color: rgb(168, 14, 14);
+        color: rgb(245, 141, 92);
         font-size: 21px;
+        font-weight: bold;
+        margin-left: 10%;
     }
     
+
+    .item-info-parent {
+      font-family: 'Raleway', sans-serif;
+      color: #2E5C2D;
+    }
 
 
     /* Select Items */
-    
-    .change-color {
-        margin-bottom: 10px;
-    }
-    
-    .change-color .thumb-box{
-        margin: 10px 10px 10px 0;
+    .change-color{
         width: 40px;
         display: inline-block;
+        border: 0.1em solid black;
     }
-    
-    .change-size select {
-        padding: 5px 10px;
-        border-radius: 4px;
-        border-color: rgb(189, 189, 189);
-        margin-top: 10px;
-    }
+
     
     .description {
         padding-left: 17px;
         font-size: 15px;
         line-height: 1.3rem;
-        background-color: rgb(168, 202, 168);
+        background-color:#F7FAF5;
         margin-right: 30px;
         padding: 6px;
+        border-radius: 25px;
+        color: #2E5C2D;
     }
     
+.quantity input{
+  width: 50px;
+  border: 0.1em solid rgb(170, 166, 166);
+  border-radius: 15px;
+}
 
 /* horizontal list */
+.change-color ul#menu {
+  margin-right: 16.5%;
+  margin-top: -1.1%;
+}
+
+.change-size ul#menu {
+  margin-right: 27%;
+  margin-top: -1.1%;
+}
+
+
 ul#menu li {
-    display:inline;
-    background-color: green;
-    padding: 8px;
+    background-color: #E0EFD6;
+    padding: 1px 8px; 
     border-radius: 12px;
     margin: 5px;
-    color: white;
+    font-size: 15px;
 }
 
 /* Reviews */
 .reviews {
     display: grid;
     grid-template-columns: 1fr 12fr;
+}
+
+.add-to-cart {
+  border: none;
+  background-color: #E0EFD6;
+  padding: 10px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #2E5C2D;
 }
