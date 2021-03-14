@@ -1,12 +1,6 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
 var filtering = function () {
   var $filterCheckboxes = $('input[type="checkbox"]');
 
-  console.log($filterCheckboxes)
-
-  
   var filterFunc = function() {
     var selectedFilters = {};
 
@@ -57,6 +51,7 @@ var filtering = function () {
 }
 
 
+
 // Banner images slide show
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -68,6 +63,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
+  var slideIndex = n;
   var slides = document.getElementsByClassName("banner-img");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    

@@ -1,6 +1,5 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -66,13 +65,13 @@ header {
 }
 
 #search img {
-  height: 19px;
+  height: 25px;
   width: 25px;
   margin-left: 50%;
 }
 
 #cart img {
-  height: 19px;
+  height: 25px;
   width: 37px;
   margin-left: 40%;
 }
@@ -191,7 +190,7 @@ footer p{
 .subscription {
   padding-top: 1%;
   padding-bottom: 2%;
-  width: 15%;
+  width: 20%;
   margin: auto;
 }
 

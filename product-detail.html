@@ -7,27 +7,43 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="static/css/style4.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <!-- JS -->
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
     <script src="static/js/main.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <nav>
-        <div class="logo-contrainer">
+    <header>
+        <div class="nav-item logo-container">
           <a id="logo"><img src="static/images/paws.png"></a>
-          <h2 id="name"> Muddy Paws Adventure Gear </h2>
+          <div id=name>
+            <img src="static/images/website-title.png">
+          </div>
         </div>
       
-        <ul class="nav-links">
-          <li id="home"><a href="index.html"> Home </a></li>
-          <li id="about"><a href="back-to-home.html"> About </a></li>
-          <li id="shop-cat"><a href="product-catalog.html"> Shop Cat </a></li>
-          <li id="shop-dog"><a href="product-catalog.html"> Shop Dog </a></li>
-          <li id="contact"><a href="back-to-home.html"> Contact </a></li>
-        </ul>
-      </nav>
+        <div class="nav-item">
+          <ul class="nav-links body-text">
+            <li class="home"><a href="home.html"> Home </a></li>
+            <li class="shop-cat"><a href="product-catalog.html"> Shop Cats </a></li>
+            <li class="shop-dog"><a href="product-catalog.html"> Shop Dogs </a></li>
+            <li class="contact"><a href="test.html"> Contact </a></li>
+          </ul>
+        </div>
+  
+        <div class="nav-item login">
+          <div class="signin center text-color body-text"> sign in </div>
+          <div id="search"><img src="static/images/search.png"></div>
+          <div id="cart"><img src="static/images/cart.png"> </div>
+        </div>
+      </header>
 
     <div class="product-info">
         <div class="item-image-parent">
@@ -115,14 +131,6 @@
 
             </div>
         </div>
-    </div>
-
-    <div class="highlights">
-        <h1> Highlights </h1>
-        <ul id="menu">
-            <li> light weight </li>
-            <li> water proof </li>
-          </ul>
     </div>
 
     <div class="recommend">
