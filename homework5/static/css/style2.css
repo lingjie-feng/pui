@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* BODY content */
 .body-content-2 {
     display: grid;
     grid-template-columns: 1fr 4fr;

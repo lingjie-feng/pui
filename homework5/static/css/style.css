@@ -18,6 +18,7 @@ header {
   min-height: 10%;
 }
 
+/* logo */
 .logo-container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -44,6 +45,8 @@ header {
   color: #26434A;
 }
 
+
+/* navigation links on the top */
 .nav-links {
   display: flex;
   list-style: none;
@@ -85,6 +88,7 @@ header a:hover {
   color: #b2b2b2;
 }
 
+/* BODY content related elements */
 .home-button {
   background-color: #D9E8C7;
   border: 0px;
@@ -95,7 +99,6 @@ header a:hover {
   position: absolute;
 }
 
-/* BODY */
 .body-content {
   display: grid;
   overflow: hidden;
@@ -174,7 +177,7 @@ img:hover {
   opacity: 0.8;
 }
 
-/* FOOTER */
+/* FOOTER information */
 footer {
   background-color: #91B6A2;
   margin-top: 5%;
@@ -228,7 +231,7 @@ footer p{
 }
 
 
-/* horizontal list */
+/* Other general styles */
 #menu {
   position: absolute;
   right: 0px;

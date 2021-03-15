@@ -1,3 +1,5 @@
+
+// product filtering based on categories. 
 var filtering = function () {
   var $filterCheckboxes = $('input[type="checkbox"]');
 
@@ -79,6 +81,7 @@ function showSlides(n) {
 }
 
 
+// display the text after the user has subscribed
 function display_sub() {
   const newp = document.createElement("p");
   newp.style.color = "#193b19";
@@ -91,6 +94,7 @@ function display_sub() {
 }
 
 
+// hide the "email address" value in the input box
 function hidevalue() {
   var input = document.getElementById("input-box");
   if (input.value == 'email address') {

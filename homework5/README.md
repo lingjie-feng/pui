@@ -25,6 +25,7 @@ Slide show of banner images: https://www.w3schools.com/howto/howto_js_slideshow.
 
 Add element using js: https://www.codegrepper.com/code-examples/javascript/create+a+p+element+javascript
 
+
 Debugging helpful links: 
 
 On change: https://stackoverflow.com/questions/35562250/onchange-function-not-working
