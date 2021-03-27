@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="static/css/style.css">
 
     <!-- JS -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
     <script src="static/js/main.js"></script>
 
@@ -41,7 +42,7 @@
       <div class="nav-item login">
         <div class="signin center text-color body-text"> sign in </div>
         <div id="search"><img src="static/images/search.png"></div>
-        <div id="cart"><img src="static/images/cart.png"> </div>
+        <div id="cart"><img src="static/images/cart.png" onclick="location.href='shopping_cart.html';"> </div>
       </div>
     </header>
 
@@ -86,7 +87,7 @@
                 <div class="star-rating">
                     <span>★★★★</span>★            
                 </div>
-                <p> 123 ratings </p>
+                <p> 2 ratings </p>
             </div>
             
             <div class="description">
@@ -118,16 +119,14 @@
                 <br><br><br>
                 <div class="quantity">
                     <label>Quantity:</label>
-                        <div>
-                            <input type="text" name="quantity" value="0" />
-                            <button class="decreaseButton minus" type="button">-</button>
-                            <button class="increaseButton plus" type="button">+</button>
-                        </div>
+                    <div class="product-quantity">
+                      <input type="number" value="1" min="1" onchange="updateQuantity(this);">
+                    </div>
                 </div>
                 
                 <br>
                 <div class="purchase">
-                    <button class="add-to-cart" type="button"> Add to Cart </button>
+                    <button class="add-to-cart" type="button"> Add to Cart </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="check-cart" onclick="location.href='shopping_cart.html';">Check My Cart</span>
                 </div>
 
             </div>

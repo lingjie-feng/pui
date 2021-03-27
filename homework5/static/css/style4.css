@@ -224,7 +224,6 @@
     .change-color{
         width: 40px;
         display: inline-block;
-        border: 0.1em solid black;
     }
 
     
@@ -265,6 +264,15 @@ ul#menu li {
     font-size: 15px;
 }
 
+ul#menu li:hover{
+  background-color: #f7bf26;
+  padding: 1px 8px; 
+  border-radius: 12px;
+  margin: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 /* Reviews */
 .reviews {
     display: grid;
@@ -278,4 +286,21 @@ ul#menu li {
   font-family: 'Raleway';
   font-weight: bold;
   color: #2E5C2D;
+  border-radius: 25px;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(243, 186, 112);
+  cursor: pointer;
+}
+
+.check-cart {
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+}
+
+.check-cart:hover {
+  cursor: pointer;
+  color: rgb(243, 158, 46);
+  font-weight: bold;
 }

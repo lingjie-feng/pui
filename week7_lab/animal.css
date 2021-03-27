@@ -2,3 +2,15 @@
     width: 50%;
     margin: auto;
 }
+
+.main-text {
+    color: red;
+  }  
+  
+  #intro {
+    color: green;
+  }
+  
+  p {
+    color: blue;
+  }

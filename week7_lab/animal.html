@@ -8,9 +8,42 @@
         <script src="objects.js"></script>
     </head>
 
-    <body onload="onLoad()">
-        <img class="center"id="animal" src="", alt=""> 
-        <p id="name"> name:  </p>
-        <p id="age"> age:  </p>
+    <body>
+        <div id="test-question">
+            How are you doing on the test so far? Select all that apply:
+            
+            <ul>
+                 <li>
+                     <input type="checkbox" id="great" checked=true>I'm doing great! :)</input>
+                 </li>
+            
+                 <li>
+                     <input type="checkbox" id="awesome" checked=true>I'm doing awesome! :]</input>
+                 </li>
+            
+                 <li>
+                     <input type="checkbox" id="superb" checked=true>I'm doing superb! :D</input>
+                 </li>
+            </ul>
+            
+            <button>Submit</button>
+            </div>
     </body>
+
+    <script>
+        var myButton = document.querySelector("button");
+        myButton.onclick = function() {
+              var testQuestion = document.getElementById("test-question");
+
+              check = document.getElementsByTagName("input");
+              for (var i = 0; i < check.length; i++) {
+                console.log(i);
+                console.log(check[i]);
+                  if  (check[i].getAttribute("checked") == "true") {
+                    check[i].parentNode.remove();
+                  }
+               }
+        }
+    </script>
+
 </html>
